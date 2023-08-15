@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AACI,KADC,CACD,aAAa,AAAE,CACX,MAAM,CAAE,CAAC,CACT,aAAa,CAAE,GAAG,CAAC,KAAK,CCClB,OAAO,CDAb,KAAK,CCAC,OAAO,CDChB",
+    "sources": [
+        "../scss/home/demo/contact.scss",
+        "../scss/_variables.scss",
+        "../scss/_mixins.scss"
+    ],
+    "names": [],
+    "file": "contact.min.css"
+}

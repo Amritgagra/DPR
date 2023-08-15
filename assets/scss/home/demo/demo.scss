@@ -1,0 +1,35 @@
+@import '../../variables';
+@import '../../mixins';
+
+.demo {
+    padding-block:86px;
+    .form-control  {
+        border: 0;
+        border-bottom: 1px solid $clr-gray-700;
+        color: $clr-gray-700;
+        border-radius: 0;
+        padding-left: 0;
+        font-size: 16px;
+        line-height: 30px;
+        padding: 2px 0 !important;
+        background: transparent;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &__form {
+        gap: 20px;
+        align-items: baseline;
+        @include mq(lg) {
+            flex-direction: column;
+            flex: 1;
+            & > .col {
+                width: 100%;
+            }
+        }
+    }
+
+    .btn {
+        white-space: nowrap;
+    }
+}
