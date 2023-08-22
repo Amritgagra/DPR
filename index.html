@@ -8,12 +8,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Ubuntu&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -22,7 +19,11 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="bootstrap.min.css" />
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+   />
     <link rel="stylesheet" href="assets/css/header.min.css" />
     <link rel="stylesheet" href="assets/css/banner.min.css" />
     <link rel="stylesheet" href="assets/css/demo.min.css" />
@@ -34,17 +35,9 @@
     <header class="fixed-top header">
       <nav class="navbar navbar-light navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img
-              src="assets/images/header-logo.svg"
-              alt=""
-              class="header-logo"
-            />
-            <img
-              src="assets/images/logo--mobile.svg"
-              alt=""
-              class="header-logo--mobile"
-            />
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/header-logo.svg" alt="" class="header-logo">
+            <img src="assets/images/logo--mobile.svg" alt="" class="header-logo--mobile">
           </a>
           <button
             class="navbar-toggler"
@@ -61,7 +54,7 @@
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header">
+            <div class="offcanvas-header ">
               <a class="nav-link mb-0 lang lang--mobile" href="#">
                 <span class="text-accent">De</span> | <span> En </span></a
               >
@@ -90,20 +83,20 @@
                     class="dropdown-menu border-0 rounded-0 line-left--lg"
                     aria-labelledby="dropdownId"
                   >
-                    <a class="dropdown-item" href="#">Vorstellung</a>
-                    <a class="dropdown-item" href="#">Vorteile</a>
-                    <a class="dropdown-item" href="#">Funktionen</a>
-                    <a class="dropdown-item" href="#">Sicherheit</a>
+                    <a class="dropdown-item" href="performance.html">Vorstellung</a>
+                    <a class="dropdown-item" href="benefit.html">Vorteile</a>
+                    <a class="dropdown-item" href="function.html">Funktionen</a>
+                    <a class="dropdown-item" href="security.html">Sicherheit</a>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Einsatzbereiche</a>
+                  <a class="nav-link" href="application.html">Einsatzbereiche</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Unternehmen</a>
+                  <a class="nav-link" href="company.html">Unternehmen</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Kontakt</a>
+                  <a class="nav-link" href="contact.html">Kontakt</a>
                 </li>
                 <li class="nav-item d-none d-lg-block">
                   <a class="nav-link lang" href="#">
@@ -111,19 +104,11 @@
                   >
                 </li>
                 <li class="nav-item pe-0">
-                  <a class="btn btn__outline-black d-none d-lg-block" href="#"
-                    >Login</a
-                  >
-                  <a
-                    class="btn btn__outline-white d-sm-block d-none d-lg-none mt-5"
-                    href="#"
-                    >Login</a
-                  >
+                  <a class="btn btn__outline-black d-none d-lg-block" href="#">Login</a>
+                  <a class="btn btn__outline-white d-sm-block d-none d-lg-none mt-5" href="#">Login</a>
                 </li>
               </ul>
-              <a class="btn btn__outline-white d-sm-none mt-auto" href="#"
-                >Login</a
-              >
+              <a class="btn btn__outline-white d-sm-none  w-100 mt-5" href="#">Login</a>
             </div>
           </div>
         </div>
@@ -136,25 +121,21 @@
           <div class="row min-h-inherit">
             <div class="col-12 d-flex justify-content-between align-items-end">
               <div class="banner__content">
-                <img
-                  src="assets/images/square-logo.svg"
-                  alt=""
-                  class="square-logo"
-                />
+                <img src="assets/images/square-logo.svg" alt="" class="square-logo" />
                 <h1 class="banner__title text-white">
                   <span class="text-border">PERFEKTES</span>
                   <span class="d-block -mt-20">Projektmanagement</span>
                 </h1>
                 <a href="#" class="btn btn__outline-white">Zur Software</a>
               </div>
-              <div
-                class="scroll-container d-none d-lg-flex align-items-center flex-column"
-              >
-                <div class="mouse">
-                  <div class="roll"></div>
+              <a href="#scroll">
+                <div class="scroll-container d-none d-lg-flex align-items-center flex-column" >
+                  <div class="mouse">
+                    <div class="roll"></div>
+                  </div>
+                  <span class="text-accent">scroll</span>
                 </div>
-                <span class="text-accent">scroll</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -162,11 +143,11 @@
       <!-- banner section end -->
 
       <!-- project section start -->
-      <section class="bg__black block-padding text-white">
+      <section class="project bg__black block-padding text-white" id="scroll">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 mb-5 mb-lg-0">
-              <div class="project__content">
+              <div class="project__content ">
                 <div class="line-left">
                   <h2>
                     Der DPR Raum -
@@ -176,40 +157,60 @@
                   </h2>
                   <p class="mb-20">
                     Vernetzen Sie Ihr Büro, die Baustelle und alle anfallenden
-                    Dokumente <br />
-                    und Pläne durch unsere digitale Projektplattform.
+                    Dokumente <br/> und Pläne durch unsere digitale Projektplattform.
                   </p>
                 </div>
-                <a href="#" class="btn btn__outline-white"
+                <a href="#" class="btn btn__outline-white full-width"
                   >Alle Funktionen anzeigen</a
                 >
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="d-flex justify-content-between align-items-end h-100">
-                <div class="d-flex flex-column gap-5 align-items-center">
-                  <img
-                    src="assets/images/project-img-1.svg"
-                    alt=""
-                    class="featue__img"
-                  />
-                  <h3 class="mb-0">Cloud-Basiert</h3>
-                </div>
-                <div class="d-flex flex-column gap-5 align-items-center">
-                  <img
-                    src="assets/images/project-img-2.svg"
-                    alt=""
-                    class="featue__img"
-                  />
-                  <h3 class="mb-0">Sicher</h3>
-                </div>
-                <div class="d-flex flex-column gap-5 align-items-center">
-                  <img
-                    src="assets/images/project-img-3.svg"
-                    alt=""
-                    class="featue__img"
-                  />
-                  <h3 class="mb-0">Zentral</h3>
+              <div
+                class="d-flex justify-content-between align-items-end h-100"
+              >
+                <div class="project__icon-swiper swiper">
+                  <div class="swiper-wrapper align-items-end">
+                    <div class="swiper-slide">
+                      <div class="d-flex flex-column gap-5 align-items-center">
+                        <img src="assets/images/project-img-1.svg" alt="" class="featue__img" />
+                        <h3 class="mb-0">Cloud-Basiert</h3>
+                      </div>
+                    </div>
+                    
+                      <div class="swiper-slide">
+                        <div class="d-flex flex-column gap-5 align-items-center">
+                          <img src="assets/images/project-img-2.svg" alt="" class="featue__img" />
+                          <h3 class="mb-0">Sicher</h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="d-flex flex-column gap-5 align-items-center">
+                          <img src="assets/images/project-img-3.svg" alt="" class="featue__img" />
+                          <h3 class="mb-0">Zentral</h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="d-flex flex-column gap-5 align-items-center">
+                          <img src="assets/images/project-img-1.svg" alt="" class="featue__img" />
+                          <h3 class="mb-0">Cloud-Basiert</h3>
+                        </div>
+                      </div>
+                      
+                        <div class="swiper-slide">
+                          <div class="d-flex flex-column gap-5 align-items-center">
+                            <img src="assets/images/project-img-2.svg" alt="" class="featue__img" />
+                            <h3 class="mb-0">Sicher</h3>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="d-flex flex-column gap-5 align-items-center">
+                            <img src="assets/images/project-img-3.svg" alt="" class="featue__img" />
+                            <h3 class="mb-0">Zentral</h3>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -221,20 +222,13 @@
       <!-- instant section start -->
       <section class="instant block-margin">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6 d-lg-flex justify-content-end mb-20 mb-lg-0">
-              <img
-                src="assets/images/instant-img.png"
-                alt=""
-                class="img-fluid instant__img"
-              />
+          <div class="row justify-content-center">
+            <div class="col-lg-5 d-lg-flex justify-content-lg-center mb-20 mb-lg-0">
+              <img src="assets/images/instant-img.png" alt="" class="img-fluid instant__img" />
             </div>
-            <div class="col-lg-6 d-flex align-items-center">
-              <div class="section__content ps-60">
-                <h2>
-                  Sofort starten. <br />
-                  Keine Software-Installation
-                </h2>
+            <div class="col-lg-5 d-flex align-items-center">
+              <div class="section__content">
+                <h2>Sofort starten. <br/> Keine Software-Installation</h2>
                 <p class="mb-20">
                   Der DPR Raum ist eine Cloud-basierte Lösung. Deshalb kann der
                   DPR Raum sofort eingesetzt werden und alle Nutzer haben so
@@ -245,7 +239,7 @@
                   eine einfache, effektive und nachvollziehbare Kommunikation
                   aller Projektbeteiligten.
                 </p>
-                <a href="#" class="btn btn__outline-black"
+                <a href="#" class="btn btn__outline-black full-width"
                   >Demo-Version anfordern</a
                 >
               </div>
@@ -254,8 +248,313 @@
         </div>
       </section>
       <!-- instant section end -->
-    </main>
 
+       <!-- collab section start -->
+      <section class="block-margin  ">
+        <div class="d-grid grid-col-2">
+          <div class="left bg__black text-white d-flex align-items-center">
+            <div class="left-content">
+              <h2>Zusammenarbeit <span class="d-block d-lg-inline-block">schnell und einfach</span></h2>
+              <p>
+                Jedes Projekt hat seine speziellen Herausforderungen. Deshalb
+                muss ein Projektraum die Produktivität in der Zusammenarbeit
+                steigern und die Komplexität reduzieren. Dabei bringen wir alle
+                Projektbeteiligten auf unserer gemeinsamen und leistungsstarken
+                Projektplattform DPR Raum zusammen. Das Rechtemanagement für
+                alle Beteiligten übernehmen wir dabei für Sie.
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <img src="assets/images/collab-img.png" alt="" class="img-fluid collab-img h-100 object-cover" />
+          </div>
+        </div>
+      </section>
+        <!-- collab section end -->
+
+      <!-- available  section start -->
+      <section class="available  block-margin ">
+        <div class="container">
+          <div class="row ">
+            <div class="col-lg-6 mb-30 mb-lg-0  d-flex justify-content-center">
+              <div class="img-container position-relative">
+                <img src="assets/images/available-img-1.png" alt="" class="img-fluid available__img--1" />
+                <img src="assets/images/available-img-2.png" alt="" class="img-fluid available__img--2" />
+              </div>
+            </div>
+            <div class="col-lg-5 px-xxl-0 align-self-lg-center">
+              <div class="section__content pt-lg-5">
+                <h2>Überall und jederzeit verfügbar</h2>
+                <p>
+                  Nutzen Sie den DPR Raum auf dem Gerät Ihrer Wahl. Nichts muss
+                  installiert werden, ein Internetzugang genügt. Sie erhalten
+                  alle Leistungen über unsere Cloud-basierte Lösung und
+                  bestimmen selber, wo und wie Sie sich über Ihr Projekt
+                  informieren. Somit bleiben Sie auch von unterwegs jederzeit
+                  auf dem Laufenden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- available section end -->
+
+      <!-- plan section start -->
+      <section class="block-padding bg__gray">
+        <div class="container">
+          <div class="plan__content">
+            <h2 class="section__title">
+              Planunterlagen <span class="d-block">online betrachten</span>
+            </h2>
+            <p class="mb-50">
+              Pläne als auch Dokumente können Sie direkt im Browser betrachten,
+              ohne Download, Installation von zusätzlicher Software oder
+              Lizenzen. Der DPR Raum unterstützt dabei über 350 aktuelle
+              Dateiformate. Lauffähig natürlich auch mit mobilen Geräten
+              (Smartphone/Tablet).
+            </p>
+            <p class="mb-20">
+              Holen Sie sich kostenlos Ihre 30-Tage Testversion.
+            </p>
+            <a href="#" class="btn btn__outline-black full-width"
+              >Demo-Version anfordern</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- plan section end -->
+
+            <!-- partner section start -->
+            <section class="partner">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="partner__content d-flex flex-wrap gap-5 justify-content-between align-items-center">
+                      <div class="partner__swiper swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="assets/images/partner-img-1.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-2.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-3.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-4.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-5.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-6.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-7.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-4.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-1.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-2.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-3.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-4.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-5.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-6.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-7.svg" alt="" class="partner__img img-fluid h-100"></div>
+                          <div class="swiper-slide"><img src="assets/images/partner-img-4.svg" alt="" class="partner__img img-fluid h-100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </section>
+              <!--  partner section end -->
+
+              <!-- construction section start -->
+      <section class="block-margin">
+        <div class="container">
+          <div class="row justify-content-center construction__container flex-wrap-reverse"> 
+            <div class="col-lg-5 d-lg-flex align-items-center justify-content-center">
+              <div class="construction__content">
+                <h2>Für die Baubranche von <span class="d-block">Fachleuten entwickelt</span></h2>
+                <p>
+                  So individuell wie Ihr Großbauprojekt muss auch der Projektraum sein. Deshalb ist der DPR Raum optimal auf die Bedürfnisse aller Projektbeteiligten zugeschnitten und zu 100 Prozent an jedes Projekt anpassbar. Und der DPR Raum ist eine Entwicklung von erfahrenen Projektmanagern, Ingenieuren, Architekten und Bauherren. Von Leuten vom Fach für Fachleute.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 mb-20 mb-lg-0">
+              <img src="assets/images/construction__img-1.png" alt="" class="img-fluid construction__img-1" />
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-5 d-lg-flex justify-content-center mb-20 mb-lg-0">
+              <img src="assets/images/construction__img-2.png" alt="" class="img-fluid construction__img-2" />
+            </div>
+            <div class="col-lg-5 d-lg-flex align-items-center">
+              <div class="section__content">
+                <h2>Service und Administration inklusive</h2>
+                <p>
+                  Die beständige Pflege und die technische Administration Ihres DPR Raums ist bei uns immer enthalten. Es versteht sich, dass hierfür keine Kosten entstehen. Zusätzlich erhalten alle Projektteilnehmer einen persönlichen Support zu unseren Geschäftszeiten, welcher Ihre Anfragen sofort bearbeitet. Auch kostenlos. So geht Service. Kostenlos, schnell, persönlich.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- construction section end -->
+
+         <!-- about section start -->
+         <section class=" about block-padding bg__gray">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2 class="about__title mb-0">SOFTWARE MADE IN GERMANY.</h2>
+              </div>
+              <div class="col-lg-6">
+                <div class="content d-none d-lg-block">
+                  <p class="mb-0">
+                    Seit Firmengründung im Jahr 2012 findet die Entwicklung, der Betrieb, die Programmierung, der Support als auch der Vertrieb zu 100% in Deutschland statt. Somit erfüllen wir für unsere Kunden stets alle hohen und strikten Anforderungen an Qualität, Datensicherheit und Datenschutz (nach DSGVO).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- about section end -->
+
+             <!-- reference section start -->
+             <section class="reference">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 position-relative">
+                    <h2 class="reference__title">UNSERE EINSATZBEREICHE <br/> (REFERENZEN)</h2>
+                    <div class="reference__content d-flex flex-wrap">
+                        <div class="reference__item  border-left col ">
+                          <div>
+                            <h3 class="line-bottom">111</h3>
+                            <p class="reference__text mb-0">Schulen & Forschung</p>
+                          </div>
+                        </div>
+                        <div class="reference__item  border-left col border__lg-top">
+                          <div>
+                            <h3 class="line-bottom">55</h3>
+                            <p class="reference__text mb-0">Krankenhäuser</p>
+                          </div>
+                        </div>
+                        <div class="reference__item  border-left col">
+                          <div>
+                            <h3 class="line-bottom">75</h3>
+                            <p class="reference__text mb-0">Verwaltungs- <br/> & Wohnbau</p>
+                          </div>
+                        </div>
+                        <div class="reference__item  border-left col">
+                          <div>
+                            <h3 class="line-bottom">13</h3>
+                            <p class="reference__text mb-0">Hotels</p>
+                          </div>
+                        </div>
+                        <div class="reference__item  border-left col">
+                          <div>
+                            <h3 class="line-bottom">28</h3>
+                            <p class="reference__text mb-0">Tiefbauprojekte</p>
+                          </div>
+                        </div>
+                        <div class="reference__item  border-left col">
+                          <div>
+                            <h3 class="line-bottom">25</h3>
+                            <p class="reference__text mb-0">Freizeitbauten</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- reference section end -->
+
+
+              <!-- connect section start -->
+         <section class="connect bg__black text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="d-flex gap-3 align-items-center mb-20 mb-lg-0">
+                  <img src="assets/images/square-logo.svg" alt="" class="square__logo d-none d-md-block">
+                  <h2 class="section__title mb-0">SPRECHEN SIE MIT UNS.</h2>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="connect__content">
+                  <p class="mb-50">
+                    Seit Firmengründung im Jahr 2012 findet die Entwicklung, der Betrieb, die Programmierung, der Support als auch der Vertrieb zu 100% in Deutschland statt. Somit erfüllen wir für unsere Kunden stets alle hohen und strikten Anforderungen an Qualität, Datensicherheit und Datenschutz (nach DSGVO).
+                  </p>
+                  <div class="d-flex gap-lg-4 gap-3 ">
+                    <a href="#" class="btn btn__accent full-width">090729530300</a>
+                    <a href="#" class="btn btn__outline-white full-width">Kontakt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- connect section end -->
+
+             <!-- demo  section start -->
+             <section class=" demo bg__gray">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-lg-5 px-xxl-0">
+                      <div class="demo__content">
+                        <h2>Kostenlose Demo anfordern:</h2>
+                        <p>Ihr persönlicher Ansprechpartner ruft Sie gerne auch zurück wenn Sie es möchten. Informationen zur Verarbeitung Ihrer Daten finden Sie auf unserer Datenschutzseite.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-7 d-flex align-items-end">
+                      <form class="d-flex demo__form">
+                        <div class="col">
+                          <div>
+                            <input type="text" class="form-control" placeholder="Vorname">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div>
+                            <input type="text" class="form-control" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div>
+                            <input type="email" class="form-control" placeholder="E-Mail">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="me-2">
+                            <input type="tel" class="form-control" placeholder="Tel.">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div>
+                            <button type="submit" class="btn btn__outline-black full-width">Demo anfordern</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+            </section>
+            <!-- demo section end -->
+            
+    </main>
+    <footer class="footer bg__black text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer__content d-flex justify-content-lg-between justify-content-center align-items-lg-end align-items-center flex-column flex-lg-row">
+              <div class="col-lg-3 mb-5 mb-lg-0"><img src="assets/images/footer__logo.svg" alt="" class="footer__logo"></div>
+              <div class="col-lg-4 text-center  order-1 order-lg-0">
+                <p class="mb-0 copyright__text">made by trendmarke</p>
+              </div>
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                <ul class="footer__list d-flex justify-content-between align-items-end gap-lg-4 gap-3 mb-0">
+                    <li class="list-item"><a href="#" class="list-link">Xing</a></li>
+                    <li class="list-item"><a href="#" class="list-link">LinkedIn</a></li>
+                    <li class="list-item"><a href="#" class="list-link">Impressum</a></li>
+                    <li class="list-item"><a href="#" class="list-link">Datenschutz</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -268,6 +567,7 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-    <script src="bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
