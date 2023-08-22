@@ -1,7 +1,7 @@
 @import '../../variables';
 @import '../../mixins';
 .banner{
-    min-height: 818px;
+    min-height: 933px;
     background: url(../images/banner-bg.png) no-repeat center;
     background-size: cover;
     position: relative;
@@ -37,7 +37,7 @@
         padding-bottom:80px;
     }
     .scroll-container {
-        padding-bottom: 80px;
+        margin-bottom: 80px;
         position: relative;
         z-index: 2;
     }

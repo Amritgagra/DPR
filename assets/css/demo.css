@@ -1,7 +1,6 @@
 .demo {
   padding-block: 86px;
 }
-
 .demo .form-control {
   border: 0;
   border-bottom: 1px solid #A2A2A2;
@@ -13,19 +12,16 @@
   padding: 2px 0 !important;
   background: transparent;
 }
-
 .demo .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
 .demo__form {
   gap: 20px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-
 @media screen and (max-width: 992px) {
   .demo__form {
     -webkit-box-orient: vertical;
@@ -40,8 +36,6 @@
     width: 100%;
   }
 }
-
 .demo .btn {
   white-space: nowrap;
-}
-/*# sourceMappingURL=demo.css.map */
+}/*# sourceMappingURL=demo.css.map */

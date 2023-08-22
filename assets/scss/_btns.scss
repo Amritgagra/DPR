@@ -6,6 +6,7 @@
     background: $clr-accent;
     border-radius: 9px;
     padding: 7px 22px;
+    font-weight: 600 !important;
     &:hover,
     &:focus {
         background: transparent !important;
@@ -18,6 +19,7 @@
     color: $clr-gray-500;
     border-radius: 9px;
     padding: 7px 22px;
+    font-weight: 600 !important;
     &:hover,
     &:focus {
         background: transparent !important;
@@ -30,6 +32,7 @@
     color: $clr-black;
     border-radius: 9px;
     padding: 7px 22px;
+    font-weight: 600 !important;
     &:hover,
     &:focus {
         background: transparent !important;

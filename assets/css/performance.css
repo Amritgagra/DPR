@@ -2,18 +2,21 @@
   background: none;
   position: relative;
 }
-
 .performance__banner::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   width: 50%;
   height: 100%;
   background: #0C0C0C;
 }
-
+@media screen and (max-width: 768px) {
+  .performance__banner::before {
+    display: none;
+  }
+}
 .performance__banner::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   left: 50%;
@@ -22,4 +25,9 @@
   background: url(../images/collab-img.png) no-repeat center;
   background-size: cover;
 }
-/*# sourceMappingURL=performance.css.map */
+@media screen and (max-width: 768px) {
+  .performance__banner::after {
+    left: 0;
+    width: 100%;
+  }
+}/*# sourceMappingURL=performance.css.map */

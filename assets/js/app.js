@@ -9,38 +9,156 @@ function scrollFunction() {
   }
 }
 
-document.querySelector('.navbar-toggler').addEventListener('click',function(){
-  document.querySelector('.navbar').classList.toggle('active');
-  document.querySelector('body').classList.toggle('overflow-hidden');
+
+
+$('.show-more').on('click',function(e){
+  e.preventDefault();
+  if($('.more-content').hasClass('d-none')){
+    $('.more-content').removeClass('d-none');
+  }         
+  else {
+    $('.more-content').addClass('d-none');
+  }
 })
 
-const swiper = new Swiper('.banner__slider', {
-    slidesPerView: 1,
-    spaceBetween: 0,
+if (typeof Swiper !== 'undefined') {
+  const swiper = new Swiper('.review-slider', {
+    slidesPerView: 3,
+    spaceBetween: 100,
     loop:true,
-    pagination: {
-      el: ".swiper-pagination",
-    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    }    
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  })
+
+  const projectSwiper = new Swiper('.project__icon-swiper', {
+    slidesPerView: 3,
+    loop:true,
+    autoplay:true,
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 60,
+      },
+    },
+  })
+  
+  const partnerSwiper = new Swiper('.partner__swiper', {
+    slidesPerView: 8,
+    loop:true,
+    autoplay:true,
+    breakpoints: {
+      0: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+      1024: {
+        slidesPerView: 8,
+        spaceBetween: 60,
+      },
+    },
   })
 
 
-  $('.show-more').on('click',function(){
-    if($(this).text() === "mehr laden") {
-      $(this).text('weniger laden')
-    }
-    else {
-      $(this).text('mehr laden')
-    }
-    if($('.more__content').hasClass('active')) {
-      $('.more__content').hide();
-      $('.more__content').removeClass('active');
-    }
-    else {
-      $('.more__content').addClass('active');
-      $('.more__content').show();
-    }
-  })
+
+//eduction slider 
+  var education = new Swiper(".education__slider-nav", {
+    spaceBetween: 0,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var education1 = new Swiper(".education__slider", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: '.education__slider-nav',
+    },
+  });
+
+//CLINICS slider 
+  var CLINICS = new Swiper(".CLINICS__slider-nav", {
+    spaceBetween: 0,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var CLINICS1 = new Swiper(".CLINICS__slider", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: '.CLINICS__slider-nav',
+    },
+  });
+
+  //CONSTRUCTION slider 
+  var CONSTRUCTION = new Swiper(".CONSTRUCTION__slider-nav", {
+    spaceBetween: 0,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var CONSTRUCTION1 = new Swiper(".CONSTRUCTION__slider", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: '.CONSTRUCTION__slider-nav',
+    },
+  });
+
+  //CULTURE slider 
+  var CULTURE = new Swiper(".CULTURE__slider-nav", {
+    spaceBetween: 0,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var CULTURE1 = new Swiper(".CULTURE__slider", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: '.CULTURE__slider-nav',
+    },
+  });
+
+  //HOUSES slider 
+  var HOUSES = new Swiper(".HOUSES__slider-nav", {
+    spaceBetween: 0,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var HOUSES1 = new Swiper(".HOUSES__slider", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: '.HOUSES__slider-nav',
+    },
+  });
+}
+
+
+
+ 

@@ -1,0 +1,88 @@
+@import '../variables';
+@import '../mixins';
+
+
+.company {
+    &__banner {
+        background: none;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: $clr-black-bg;
+            @include mq(md) {
+                display: none;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            left: 50%;
+            width: 50%;
+            height: 100%;
+            background: url(../images/company-bg.png) no-repeat center;
+            background-size: cover;
+            @include mq(md) {
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+    &__content {
+        max-width: 635px;
+        margin-left: 130px;
+        @include mq(xxxl) {
+            margin-left: 10%;
+        }
+        @include mq(lg) {
+            margin-left: 0%;
+        }
+    }
+
+    .img-container {
+        display: grid;
+        grid-template-columns:repeat(4, auto);
+        grid-template-rows: repeat(4, auto);
+
+     
+        .company-img-1 {
+            grid-column: 2/-1;
+            grid-row: 1/span 2;
+            justify-self: end;
+            // @include mq(lg) {
+            //     justify-self: start;
+            // }
+        }
+        .company-img-2 {
+            grid-column: 2/span 3;
+            grid-row: 2/-1;
+            @include mq(xxxl) {
+                grid-column: 1/span 3;
+                grid-row: 2/-1;
+            }
+        }
+    }
+}
+
+.slider-btns .swiper-button-next::after,
+.slider-btns .swiper-button-prev::after {
+    display: none;
+}
+.slider-btns .swiper-button-next {
+    transform: rotate(180deg);
+
+  
+}
+.slider-btns .swiper-button-next,
+.slider-btns .swiper-button-prev {
+    width: auto;
+    img {
+        @include mq(xxl) {
+           max-width: 80px;
+        }
+    }
+}
